@@ -1,0 +1,1359 @@
+-- Logs begin at Mon 2020-05-04 20:31:03 UTC, end at Tue 2020-05-05 14:15:41 UTC. --
+May 05 13:28:07 ip-172-31-2-140 mysqld[15485]: Server socket created on IP: '127.0.0.1'.
+May 05 13:28:07 ip-172-31-2-140 mysqld[15485]: /usr/sbin/mysqld: ready for connections.
+                                               Version: '5.7.30-0ubuntu0.18.04.1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Ubuntu)
+May 05 13:29:35 ip-172-31-2-140 sudo[15516]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/var/www/html/bananatoy ; USER=root ; COMMAND=/usr/sbin/service mysql restart[0m
+May 05 13:29:35 ip-172-31-2-140 sudo[15516]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:29:35 ip-172-31-2-140 systemd[1]: Starting MySQL Community Server...
+-- Subject: Unit mysql.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has begun starting up.
+May 05 13:30:05 ip-172-31-2-140 sshd[1734]: Received disconnect from 186.228.178.158 port 52956:11: disconnected by user
+May 05 13:30:05 ip-172-31-2-140 sshd[1734]: Disconnected from user ubuntu 186.228.178.158 port 52956
+May 05 13:30:05 ip-172-31-2-140 sshd[1652]: pam_unix(sshd:session): session closed for user ubuntu
+May 05 13:30:05 ip-172-31-2-140 sudo[15516]: pam_unix(sudo:session): session closed for user root
+May 05 13:30:05 ip-172-31-2-140 su[14704]: pam_unix(su:session): session closed for user root
+May 05 13:30:05 ip-172-31-2-140 mysqld[15485]: Giving 1 client threads a chance to die gracefully
+May 05 13:30:05 ip-172-31-2-140 mysqld[15485]: Shutting down slave threads
+May 05 13:30:05 ip-172-31-2-140 sudo[14703]: pam_unix(sudo:session): session closed for user root
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Forcefully disconnecting 1 remaining clients
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: [0;1;39m[0;1;31m[0;1;39m/usr/sbin/mysqld: Forcing close of thread 3  user: 'root'[0m
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Binlog end
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'ngram'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'partition'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'BLACKHOLE'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'ARCHIVE'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'PERFORMANCE_SCHEMA'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'MRG_MYISAM'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'MyISAM'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_VIRTUAL'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_DATAFILES'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_TABLESPACES'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_FOREIGN'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_FIELDS'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_COLUMNS'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_INDEXES'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_TABLESTATS'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_SYS_TABLES'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_FT_CONFIG'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_FT_BEING_DELETED'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_FT_DELETED'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_METRICS'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_BUFFER_PAGE'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_CMP_PER_INDEX'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_CMPMEM_RESET'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_CMPMEM'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_CMP_RESET'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_CMP'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_LOCK_WAITS'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_LOCKS'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'INNODB_TRX'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'InnoDB'
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: InnoDB: FTS optimize thread exiting.
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: InnoDB: Starting shutdown...
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+May 05 13:30:07 ip-172-31-2-140 mysqld[15485]: InnoDB: Buffer pool(s) dump completed at 200505 13:30:07
+May 05 13:30:07 ip-172-31-2-140 sshd[15566]: Accepted publickey for ubuntu from 186.228.178.158 port 53908 ssh2: RSA SHA256:DqTxzeB5k9rcMVfOzRQH9oQ2x+Ci/m+Wlu/1hKGJKOo
+May 05 13:30:07 ip-172-31-2-140 sshd[15566]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 05 13:30:07 ip-172-31-2-140 systemd[1]: Started Session 66 of user ubuntu.
+-- Subject: Unit session-66.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit session-66.scope has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 13:30:07 ip-172-31-2-140 systemd-logind[785]: New session 66 of user ubuntu.
+-- Subject: A new session 66 has been created for user ubuntu
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID 66 has been created for the user ubuntu.
+-- 
+-- The leading process of the session is 15566.
+May 05 13:30:08 ip-172-31-2-140 mysqld[15485]: InnoDB: Shutdown completed; log sequence number 3133869
+May 05 13:30:08 ip-172-31-2-140 mysqld[15485]: InnoDB: Removed temporary tablespace data file: "ibtmp1"
+May 05 13:30:08 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'MEMORY'
+May 05 13:30:08 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'CSV'
+May 05 13:30:08 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'sha256_password'
+May 05 13:30:08 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'mysql_native_password'
+May 05 13:30:08 ip-172-31-2-140 mysqld[15485]: Shutting down plugin 'binlog'
+May 05 13:30:08 ip-172-31-2-140 mysqld[15485]: /usr/sbin/mysqld: Shutdown complete
+May 05 13:30:08 ip-172-31-2-140 mysqld_safe[15602]: [0;1;39m[0;1;31m[0;1;39mmysqld from pid file /var/run/mysqld/mysqld.pid ended[0m
+May 05 13:30:08 ip-172-31-2-140 systemd-logind[785]: Removed session 63.
+-- Subject: Session 63 has been terminated
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID 63 has been terminated.
+May 05 13:30:09 ip-172-31-2-140 systemd[1]: Started MySQL Community Server.
+-- Subject: Unit mysql.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 13:30:31 ip-172-31-2-140 sudo[15718]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/bin/mysql -u root[0m
+May 05 13:30:31 ip-172-31-2-140 sudo[15718]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:30:31 ip-172-31-2-140 sudo[15718]: pam_unix(sudo:session): session closed for user root
+May 05 13:30:33 ip-172-31-2-140 sudo[15720]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/bin/mysql[0m
+May 05 13:30:33 ip-172-31-2-140 sudo[15720]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:30:33 ip-172-31-2-140 sudo[15720]: pam_unix(sudo:session): session closed for user root
+May 05 13:30:55 ip-172-31-2-140 systemd-networkd[597]: eth0: Configured
+May 05 13:30:55 ip-172-31-2-140 systemd-timesyncd[471]: Network configuration changed, trying to establish connection.
+May 05 13:30:55 ip-172-31-2-140 systemd-timesyncd[471]: Synchronized to time server 91.189.89.198:123 (ntp.ubuntu.com).
+May 05 13:31:04 ip-172-31-2-140 mysqld_safe[16045]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:31:04 ip-172-31-2-140 mysqld_safe[16064]: [0;1;31m[0;1;39m[0;1;31mFatal error: Can't remove the pid file:[0m
+                                                    [0;1;31m/var/run/mysqld/mysqld.pid.[0m
+                                                    [0;1;31mPlease remove the file manually and start /usr/bin/mysqld_safe again;[0m
+                                                    [0;1;31mmysqld daemon not started[0m
+May 05 13:31:13 ip-172-31-2-140 su[2108]: pam_unix(su:session): session closed for user root
+May 05 13:31:13 ip-172-31-2-140 sudo[2107]: pam_unix(sudo:session): session closed for user root
+May 05 13:31:23 ip-172-31-2-140 sshd[15699]: Received disconnect from 186.228.178.158 port 53908:11: disconnected by user
+May 05 13:31:23 ip-172-31-2-140 sshd[15699]: Disconnected from user ubuntu 186.228.178.158 port 53908
+May 05 13:31:23 ip-172-31-2-140 sshd[15566]: pam_unix(sshd:session): session closed for user ubuntu
+May 05 13:31:23 ip-172-31-2-140 systemd-logind[785]: Removed session 66.
+-- Subject: Session 66 has been terminated
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID 66 has been terminated.
+May 05 13:31:31 ip-172-31-2-140 sshd[16068]: Accepted publickey for ubuntu from 186.228.178.158 port 53912 ssh2: RSA SHA256:DqTxzeB5k9rcMVfOzRQH9oQ2x+Ci/m+Wlu/1hKGJKOo
+May 05 13:31:31 ip-172-31-2-140 sshd[16068]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 05 13:31:31 ip-172-31-2-140 systemd[1]: Started Session 67 of user ubuntu.
+-- Subject: Unit session-67.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit session-67.scope has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 13:31:31 ip-172-31-2-140 systemd-logind[785]: New session 67 of user ubuntu.
+-- Subject: A new session 67 has been created for user ubuntu
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID 67 has been created for the user ubuntu.
+-- 
+-- The leading process of the session is 16068.
+May 05 13:31:33 ip-172-31-2-140 sudo[16163]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/su[0m
+May 05 13:31:33 ip-172-31-2-140 sudo[16163]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:31:33 ip-172-31-2-140 su[16164]: Successful su for root by root
+May 05 13:31:33 ip-172-31-2-140 su[16164]: + /dev/pts/3 root:root
+May 05 13:31:33 ip-172-31-2-140 su[16164]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)
+May 05 13:31:33 ip-172-31-2-140 su[16164]: pam_systemd(su:session): Cannot create session: Already running in a session
+May 05 13:31:39 ip-172-31-2-140 mysqld_safe[16497]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:31:39 ip-172-31-2-140 mysqld_safe[16518]: [0;1;31m[0;1;39m[0;1;31mA mysqld process already exists[0m
+May 05 13:31:47 ip-172-31-2-140 sudo[16519]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service mysql stop[0m
+May 05 13:31:47 ip-172-31-2-140 sudo[16519]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:31:48 ip-172-31-2-140 systemd[1]: Stopping MySQL Community Server...
+-- Subject: Unit mysql.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has begun shutting down.
+May 05 13:31:49 ip-172-31-2-140 systemd[1]: Stopped MySQL Community Server.
+-- Subject: Unit mysql.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has finished shutting down.
+May 05 13:31:49 ip-172-31-2-140 sudo[16519]: pam_unix(sudo:session): session closed for user root
+May 05 13:31:51 ip-172-31-2-140 mysqld_safe[16881]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:31:51 ip-172-31-2-140 mysqld_safe[16885]: [0;1;31m[0;1;39m[0;1;31mDirectory '/var/run/mysqld' for UNIX socket file don't exists.[0m
+May 05 13:32:09 ip-172-31-2-140 mysqld_safe[17210]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:32:09 ip-172-31-2-140 mysqld_safe[17246]: [0;1;39m[0;1;31m[0;1;39mStarting mysqld daemon with databases from /var/lib/mysql[0m
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: /usr/sbin/mysqld (mysqld 5.7.30-0ubuntu0.18.04.1) starting as process 17248 ...
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: PUNCH HOLE support available
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Mutexes and rw_locks use GCC atomic builtins
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Uses event mutexes
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Compressed tables use zlib 1.2.11
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Using Linux native AIO
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Number of pools: 1
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Using CPU crc32 instructions
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Completed initialization of buffer pool
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Highest supported file format is Barracuda.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Creating shared tablespace for temporary tables
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: File './ibtmp1' size is now 12 MB.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: 32 non-redo rollback segment(s) are active.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Waiting for purge to start
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: 5.7.30 started; log sequence number 3133897
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: Plugin 'FEDERATED' is disabled.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: Skipping generation of SSL certificates as certificate files are present in data directory.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: InnoDB: Buffer pool(s) load completed at 200505 13:32:10
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: [0;1;39m[0;1;31m[0;1;39mCA certificate ca.pem is self signed.[0m
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: Skipping generation of RSA key pair as key files are present in data directory.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: Server hostname (bind-address): '127.0.0.1'; port: 3306
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]:   - '127.0.0.1' resolves to '127.0.0.1';
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: Server socket created on IP: '127.0.0.1'.
+May 05 13:32:10 ip-172-31-2-140 mysqld[17248]: /usr/sbin/mysqld: ready for connections.
+                                               Version: '5.7.30-0ubuntu0.18.04.1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Ubuntu)
+May 05 13:32:36 ip-172-31-2-140 mysqld[17248]: [0;1;39m[0;1;31m[0;1;39mUser entry 'root'@'localhost' has an empty plugin value. The user will be ignored and no one can login with this user anymore.[0m
+May 05 13:32:36 ip-172-31-2-140 mysqld[17248]: [0;1;39m[0;1;31m[0;1;39mSome of the user accounts with SUPER privileges were disabled because of empty mysql.user.plugin value. If you are upgrading from MySQL 5.6 to MySQL 5.7 it means we were not able to substitute for empty plugin column. Probably because of pre 4.1 password hash. If your account is disabled you will need to:[0m
+May 05 13:32:36 ip-172-31-2-140 mysqld[17248]: [0;1;39m[0;1;31m[0;1;39m1. Stop the server and restart it with --skip-grant-tables.[0m
+May 05 13:32:36 ip-172-31-2-140 mysqld[17248]: [0;1;39m[0;1;31m[0;1;39m2. Run mysql_upgrade.[0m
+May 05 13:32:36 ip-172-31-2-140 mysqld[17248]: [0;1;39m[0;1;31m[0;1;39m3. Restart the server with the parameters you normally use.[0m
+May 05 13:32:36 ip-172-31-2-140 mysqld[17248]: [0;1;39m[0;1;31m[0;1;39mFor complete instructions on how to upgrade MySQL to a new version please see the 'Upgrading MySQL' section from the MySQL manual[0m
+May 05 13:33:45 ip-172-31-2-140 sshd[17280]: Received disconnect from 222.186.15.115 port 40275:11:  [preauth]
+May 05 13:33:45 ip-172-31-2-140 sshd[17280]: Disconnected from authenticating user root 222.186.15.115 port 40275 [preauth]
+May 05 13:35:58 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:37:48 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: YES)
+May 05 13:38:21 ip-172-31-2-140 sudo[17289]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/bin/su[0m
+May 05 13:38:21 ip-172-31-2-140 sudo[17289]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:38:21 ip-172-31-2-140 su[17290]: Successful su for root by root
+May 05 13:38:21 ip-172-31-2-140 su[17290]: + /dev/pts/1 root:root
+May 05 13:38:21 ip-172-31-2-140 su[17290]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)
+May 05 13:38:21 ip-172-31-2-140 su[17290]: pam_systemd(su:session): Cannot create session: Already running in a session
+May 05 13:38:32 ip-172-31-2-140 su[17290]: pam_unix(su:session): session closed for user root
+May 05 13:38:32 ip-172-31-2-140 sudo[17289]: pam_unix(sudo:session): session closed for user root
+May 05 13:38:35 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:38:51 ip-172-31-2-140 sudo[17304]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/bin/mysql[0m
+May 05 13:38:51 ip-172-31-2-140 sudo[17304]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:38:51 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:38:51 ip-172-31-2-140 sudo[17304]: pam_unix(sudo:session): session closed for user root
+May 05 13:38:54 ip-172-31-2-140 sudo[17306]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/bin/su[0m
+May 05 13:38:54 ip-172-31-2-140 sudo[17306]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:38:54 ip-172-31-2-140 su[17307]: Successful su for root by root
+May 05 13:38:54 ip-172-31-2-140 su[17307]: + /dev/pts/1 root:root
+May 05 13:38:54 ip-172-31-2-140 su[17307]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)
+May 05 13:38:54 ip-172-31-2-140 su[17307]: pam_systemd(su:session): Cannot create session: Already running in a session
+May 05 13:38:56 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:38:58 ip-172-31-2-140 sudo[17319]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/bin/mysql[0m
+May 05 13:38:58 ip-172-31-2-140 sudo[17319]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:38:58 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:38:58 ip-172-31-2-140 sudo[17319]: pam_unix(sudo:session): session closed for user root
+May 05 13:39:01 ip-172-31-2-140 CRON[17321]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 05 13:39:01 ip-172-31-2-140 CRON[17322]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 05 13:39:01 ip-172-31-2-140 CRON[17321]: pam_unix(cron:session): session closed for user root
+May 05 13:39:01 ip-172-31-2-140 mysqld_safe[17645]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:39:01 ip-172-31-2-140 mysqld_safe[17666]: [0;1;31m[0;1;39m[0;1;31mA mysqld process already exists[0m
+May 05 13:39:03 ip-172-31-2-140 systemd[1]: Starting Clean php session files...
+-- Subject: Unit phpsessionclean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has begun starting up.
+May 05 13:39:03 ip-172-31-2-140 systemd[1]: Started Clean php session files.
+-- Subject: Unit phpsessionclean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 13:39:06 ip-172-31-2-140 sudo[17760]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service mysql stop[0m
+May 05 13:39:06 ip-172-31-2-140 sudo[17760]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:39:06 ip-172-31-2-140 sudo[17760]: pam_unix(sudo:session): session closed for user root
+May 05 13:39:08 ip-172-31-2-140 mysqld_safe[18112]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:39:08 ip-172-31-2-140 mysqld_safe[18133]: [0;1;31m[0;1;39m[0;1;31mA mysqld process already exists[0m
+May 05 13:39:14 ip-172-31-2-140 sudo[18134]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service mysql stop[0m
+May 05 13:39:14 ip-172-31-2-140 sudo[18134]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:39:14 ip-172-31-2-140 sudo[18134]: pam_unix(sudo:session): session closed for user root
+May 05 13:39:17 ip-172-31-2-140 sudo[18164]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service mysql start[0m
+May 05 13:39:17 ip-172-31-2-140 sudo[18164]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:39:17 ip-172-31-2-140 systemd[1]: Starting MySQL Community Server...
+-- Subject: Unit mysql.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has begun starting up.
+May 05 13:39:35 ip-172-31-2-140 mysqld_safe[18553]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:39:35 ip-172-31-2-140 mysqld_safe[18574]: [0;1;31m[0;1;39m[0;1;31mA mysqld process already exists[0m
+May 05 13:39:44 ip-172-31-2-140 sudo[18575]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/bin/mysql[0m
+May 05 13:39:44 ip-172-31-2-140 sudo[18575]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:39:44 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:39:44 ip-172-31-2-140 sudo[18575]: pam_unix(sudo:session): session closed for user root
+May 05 13:39:46 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:39:49 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:39:51 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: YES)
+May 05 13:40:11 ip-172-31-2-140 sshd[18581]: Invalid user admin from 87.251.74.50 port 40502
+May 05 13:40:11 ip-172-31-2-140 sshd[18581]: Connection closed by invalid user admin 87.251.74.50 port 40502 [preauth]
+May 05 13:40:14 ip-172-31-2-140 sudo[18583]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/bin/mysql -uroot -p[0m
+May 05 13:40:14 ip-172-31-2-140 sudo[18583]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:40:16 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:40:16 ip-172-31-2-140 sudo[18583]: pam_unix(sudo:session): session closed for user root
+May 05 13:40:25 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:40:37 ip-172-31-2-140 mysqld[17248]: Access denied for user 'root'@'localhost' (using password: NO)
+May 05 13:40:52 ip-172-31-2-140 mysqld_safe[18910]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:40:52 ip-172-31-2-140 mysqld_safe[18931]: [0;1;31m[0;1;39m[0;1;31mA mysqld process already exists[0m
+May 05 13:40:58 ip-172-31-2-140 mysqld[18216]: Initialization of mysqld failed: 0
+May 05 13:40:58 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmysql.service: Control process exited, code=exited status=1[0m
+May 05 13:40:58 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmysql.service: Failed with result 'exit-code'.[0m
+May 05 13:40:58 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MySQL Community Server.[0m
+-- Subject: Unit mysql.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has failed.
+-- 
+-- The result is RESULT.
+May 05 13:40:58 ip-172-31-2-140 systemd[1]: mysql.service: Service hold-off time over, scheduling restart.
+May 05 13:40:58 ip-172-31-2-140 systemd[1]: mysql.service: Scheduled restart job, restart counter is at 1.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit mysql.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+May 05 13:40:58 ip-172-31-2-140 systemd[1]: Stopped MySQL Community Server.
+-- Subject: Unit mysql.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has finished shutting down.
+May 05 13:40:58 ip-172-31-2-140 systemd[1]: Starting MySQL Community Server...
+-- Subject: Unit mysql.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has begun starting up.
+May 05 13:41:00 ip-172-31-2-140 sudo[18981]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/service mysql restart[0m
+May 05 13:41:00 ip-172-31-2-140 sudo[18981]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:41:58 ip-172-31-2-140 mysqld_safe[19325]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:41:58 ip-172-31-2-140 mysqld_safe[19361]: [0;1;39m[0;1;31m[0;1;39mStarting mysqld daemon with databases from /var/lib/mysql[0m
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: /usr/sbin/mysqld (mysqld 5.7.30-0ubuntu0.18.04.1) starting as process 19363 ...
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: PUNCH HOLE support available
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Mutexes and rw_locks use GCC atomic builtins
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Uses event mutexes
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Compressed tables use zlib 1.2.11
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Using Linux native AIO
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Number of pools: 1
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Using CPU crc32 instructions
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Completed initialization of buffer pool
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:41:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Retrying to lock the first data file
+May 05 13:41:59 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:41:59 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:00 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:00 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:01 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:01 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:02 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:02 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:03 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:03 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:04 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:04 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:05 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:05 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:06 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:06 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:07 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:07 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:08 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:08 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:09 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:09 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:10 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:10 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:11 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:11 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:12 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:12 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:13 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:13 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:14 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:14 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:15 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:15 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:16 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:16 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:17 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:17 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:18 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:18 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:19 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:19 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:20 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:20 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:21 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:21 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:22 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:22 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:23 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:23 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:24 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:24 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:25 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:25 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:26 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:26 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:27 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:27 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:28 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:28 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:29 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:29 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:30 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:30 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:31 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:31 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:32 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:32 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:33 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:33 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:34 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:34 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:35 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:35 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:36 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:36 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:37 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:37 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:38 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:38 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:39 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:39 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:39 ip-172-31-2-140 systemd[1]: Stopped MySQL Community Server.
+-- Subject: Unit mysql.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has finished shutting down.
+May 05 13:42:40 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:40 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:41 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:41 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:42 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:42 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:43 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:43 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:44 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:44 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:45 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:45 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:46 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:46 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:47 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:47 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:48 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:48 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:49 ip-172-31-2-140 mysqld_safe[19740]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:42:49 ip-172-31-2-140 mysqld_safe[19744]: [0;1;31m[0;1;39m[0;1;31mDirectory '/var/run/mysqld' for UNIX socket file don't exists.[0m
+May 05 13:42:49 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:49 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:50 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:50 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:51 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:51 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:52 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:52 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:53 ip-172-31-2-140 su[17307]: pam_unix(su:session): session closed for user root
+May 05 13:42:53 ip-172-31-2-140 sudo[17306]: pam_unix(sudo:session): session closed for user root
+May 05 13:42:53 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:53 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:54 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:54 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:55 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:55 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:56 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:56 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:57 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:57 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:58 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:58 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:42:59 ip-172-31-2-140 mysqld_safe[20067]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:42:59 ip-172-31-2-140 mysqld_safe[20071]: [0;1;31m[0;1;39m[0;1;31mDirectory '/var/run/mysqld' for UNIX socket file don't exists.[0m
+May 05 13:42:59 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:42:59 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:00 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:00 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:01 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:01 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:02 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:02 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:03 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:03 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:04 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:04 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:05 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:05 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:06 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:06 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:07 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:07 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:08 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:08 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:09 ip-172-31-2-140 mysqld_safe[20395]: [0;1;39m[0;1;31m[0;1;39mLogging to '/var/log/mysql/error.log'.[0m
+May 05 13:43:09 ip-172-31-2-140 mysqld_safe[20431]: [0;1;39m[0;1;31m[0;1;39mStarting mysqld daemon with databases from /var/lib/mysql[0m
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: /usr/sbin/mysqld (mysqld 5.7.30-0ubuntu0.18.04.1) starting as process 20433 ...
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: PUNCH HOLE support available
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Mutexes and rw_locks use GCC atomic builtins
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Uses event mutexes
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Compressed tables use zlib 1.2.11
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Using Linux native AIO
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Number of pools: 1
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Using CPU crc32 instructions
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Completed initialization of buffer pool
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Retrying to lock the first data file
+May 05 13:43:09 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:09 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:10 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:10 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:10 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:10 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:11 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:11 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:11 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:11 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:12 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:12 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:12 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:12 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:13 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:13 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:13 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:13 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:14 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:14 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:14 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:14 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:15 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:15 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:15 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:15 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:16 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:16 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:16 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:16 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:17 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:17 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:17 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:17 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:18 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:18 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:18 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:18 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:19 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:19 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:19 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:19 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:20 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:20 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:20 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:20 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:21 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:21 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:21 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:21 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:22 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:22 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:22 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:22 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:23 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:23 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:23 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:23 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:24 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:24 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:24 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:24 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:25 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:25 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:25 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:25 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:26 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:26 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:26 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:26 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:27 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:27 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:27 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:27 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:28 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:28 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:28 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:28 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:29 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:29 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:29 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:29 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:30 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:30 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:30 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:30 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:31 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:31 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:31 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:31 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:32 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:32 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:32 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:32 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:33 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:33 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:33 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:33 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:34 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:34 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:34 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:34 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:35 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:35 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:35 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:35 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:36 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:36 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:36 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:36 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:37 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:37 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:37 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:37 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:38 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:38 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: InnoDB: Unable to open the first data file
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Operating system error number 11 in a file operation.[0m
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Error number 11 means 'Resource temporarily unavailable'[0m
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: InnoDB: Some operating system error numbers are described at http://dev.mysql.com/doc/refman/5.7/en/operating-system-error-codes.html
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Cannot open datafile './ibdata1'[0m
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data![0m
+May 05 13:43:38 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Plugin initialization aborted with error Cannot open a file[0m
+May 05 13:43:39 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:39 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:39 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mPlugin 'InnoDB' init function returned error.[0m
+May 05 13:43:39 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mPlugin 'InnoDB' registration as a STORAGE ENGINE failed.[0m
+May 05 13:43:39 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mFailed to initialize builtin plugins.[0m
+May 05 13:43:39 ip-172-31-2-140 mysqld[19363]: [0;1;31m[0;1;39m[0;1;31mAborting[0m
+May 05 13:43:39 ip-172-31-2-140 mysqld[19363]: Binlog end
+May 05 13:43:39 ip-172-31-2-140 mysqld[19363]: Shutting down plugin 'CSV'
+May 05 13:43:39 ip-172-31-2-140 mysqld[19363]: /usr/sbin/mysqld: Shutdown complete
+May 05 13:43:39 ip-172-31-2-140 mysqld_safe[20450]: [0;1;39m[0;1;31m[0;1;39mmysqld from pid file /var/run/mysqld/mysqld.pid ended[0m
+May 05 13:43:40 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:40 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:41 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:41 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:42 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:42 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:43 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:43 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:44 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:44 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:45 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:45 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:46 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:46 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:47 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:47 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:48 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:48 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:49 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:49 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:50 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:50 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:51 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:51 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:52 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:52 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:53 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:53 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:54 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:54 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:55 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:55 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:56 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:56 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:57 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:57 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:58 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:58 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:43:59 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:43:59 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:00 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:00 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:01 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:01 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:02 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:02 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:03 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:03 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:04 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:04 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:05 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:05 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:06 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:06 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:07 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:07 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:08 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:08 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:09 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:09 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:10 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:10 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:11 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:11 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:12 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:12 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:13 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:13 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:14 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:14 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:15 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:15 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:16 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:16 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:17 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:17 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:18 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:18 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:19 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:19 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:20 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:20 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:20 ip-172-31-2-140 sudo[20454]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get remove[0m
+May 05 13:44:20 ip-172-31-2-140 sudo[20454]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:44:21 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:21 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:21 ip-172-31-2-140 sudo[20454]: pam_unix(sudo:session): session closed for user root
+May 05 13:44:22 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:22 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:23 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:23 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:24 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:24 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:25 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:25 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:26 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:26 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:27 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:27 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:27 ip-172-31-2-140 sudo[20486]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get autoremove[0m
+May 05 13:44:27 ip-172-31-2-140 sudo[20486]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:44:28 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:28 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:29 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:29 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:30 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:30 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:31 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:31 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:32 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:32 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:33 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:33 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:34 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:34 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:34 ip-172-31-2-140 sudo[20486]: pam_unix(sudo:session): session closed for user root
+May 05 13:44:35 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:35 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:36 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:36 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:37 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:37 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:38 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:38 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:39 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:39 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:39 ip-172-31-2-140 sudo[20644]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get autoclean[0m
+May 05 13:44:39 ip-172-31-2-140 sudo[20644]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:44:40 ip-172-31-2-140 sudo[20644]: pam_unix(sudo:session): session closed for user root
+May 05 13:44:40 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:40 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:41 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:41 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:42 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:42 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:43 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:43 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:44 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:44 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:44 ip-172-31-2-140 sudo[20648]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/rm -rf /var/lib/mysql[0m
+May 05 13:44:44 ip-172-31-2-140 sudo[20648]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:44:44 ip-172-31-2-140 sudo[20648]: pam_unix(sudo:session): session closed for user root
+May 05 13:44:45 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:45 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:46 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:46 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:47 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:47 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:48 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:48 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Unable to lock ./ibdata1 error: 11[0m
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: InnoDB: Unable to open the first data file
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Operating system error number 11 in a file operation.[0m
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Error number 11 means 'Resource temporarily unavailable'[0m
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: InnoDB: Some operating system error numbers are described at http://dev.mysql.com/doc/refman/5.7/en/operating-system-error-codes.html
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Cannot open datafile './ibdata1'[0m
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data![0m
+May 05 13:44:49 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Plugin initialization aborted with error Cannot open a file[0m
+May 05 13:44:49 ip-172-31-2-140 sudo[20650]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install mysql-server-5.6[0m
+May 05 13:44:49 ip-172-31-2-140 sudo[20650]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:44:49 ip-172-31-2-140 sudo[20650]: pam_unix(sudo:session): session closed for user root
+May 05 13:44:50 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mPlugin 'InnoDB' init function returned error.[0m
+May 05 13:44:50 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mPlugin 'InnoDB' registration as a STORAGE ENGINE failed.[0m
+May 05 13:44:50 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mFailed to initialize builtin plugins.[0m
+May 05 13:44:50 ip-172-31-2-140 mysqld[20433]: [0;1;31m[0;1;39m[0;1;31mAborting[0m
+May 05 13:44:50 ip-172-31-2-140 mysqld[20433]: Binlog end
+May 05 13:44:50 ip-172-31-2-140 mysqld[20433]: Shutting down plugin 'CSV'
+May 05 13:44:50 ip-172-31-2-140 mysqld[20433]: /usr/sbin/mysqld: Shutdown complete
+May 05 13:45:03 ip-172-31-2-140 sudo[18164]: pam_unix(sudo:session): session closed for user root
+May 05 13:45:03 ip-172-31-2-140 sudo[18981]: pam_unix(sudo:session): session closed for user root
+May 05 13:45:03 ip-172-31-2-140 mysqld[17248]: Giving 1 client threads a chance to die gracefully
+May 05 13:45:03 ip-172-31-2-140 mysqld[17248]: Shutting down slave threads
+May 05 13:45:03 ip-172-31-2-140 su[16164]: pam_unix(su:session): session closed for user root
+May 05 13:45:03 ip-172-31-2-140 sudo[16163]: pam_unix(sudo:session): session closed for user root
+May 05 13:45:03 ip-172-31-2-140 mysqld_safe[20673]: [0;1;39m[0;1;31m[0;1;39mmysqld from pid file /var/run/mysqld/mysqld.pid ended[0m
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Forcefully disconnecting 1 remaining clients
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: [0;1;39m[0;1;31m[0;1;39m/usr/sbin/mysqld: Forcing close of thread 2  user: 'root'[0m
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Binlog end
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'ngram'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'partition'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'BLACKHOLE'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'ARCHIVE'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'PERFORMANCE_SCHEMA'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'MRG_MYISAM'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'MyISAM'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_VIRTUAL'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_DATAFILES'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_TABLESPACES'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_FOREIGN'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_FIELDS'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_COLUMNS'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_INDEXES'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_TABLESTATS'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_SYS_TABLES'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_FT_CONFIG'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_FT_BEING_DELETED'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_FT_DELETED'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_METRICS'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_BUFFER_PAGE'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_CMP_PER_INDEX'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_CMPMEM_RESET'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_CMPMEM'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_CMP_RESET'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_CMP'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_LOCK_WAITS'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_LOCKS'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'INNODB_TRX'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'InnoDB'
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: InnoDB: FTS optimize thread exiting.
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: InnoDB: Starting shutdown...
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+May 05 13:45:05 ip-172-31-2-140 mysqld[17248]: [0;1;31m[0;1;39m[0;1;31mInnoDB: Cannot open '/var/lib/mysql/ib_buffer_pool.incomplete' for writing: No such file or directory[0m
+May 05 13:45:07 ip-172-31-2-140 mysqld[17248]: InnoDB: Shutdown completed; log sequence number 3133925
+May 05 13:45:07 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'MEMORY'
+May 05 13:45:07 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'CSV'
+May 05 13:45:07 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'sha256_password'
+May 05 13:45:07 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'mysql_native_password'
+May 05 13:45:07 ip-172-31-2-140 mysqld[17248]: Shutting down plugin 'binlog'
+May 05 13:45:07 ip-172-31-2-140 mysqld[17248]: Unable to delete pid file: No such file or directory
+May 05 13:45:07 ip-172-31-2-140 mysqld[17248]: /usr/sbin/mysqld: Shutdown complete
+May 05 13:45:07 ip-172-31-2-140 mysqld_safe[20687]: [0;1;39m[0;1;31m[0;1;39mmysqld from pid file /var/run/mysqld/mysqld.pid ended[0m
+May 05 13:45:11 ip-172-31-2-140 sudo[20689]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install mysql-server-5.xcaf[0m
+May 05 13:45:11 ip-172-31-2-140 sudo[20689]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:45:11 ip-172-31-2-140 sudo[20689]: pam_unix(sudo:session): session closed for user root
+May 05 13:45:22 ip-172-31-2-140 sudo[20724]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install mysql-server-5.7[0m
+May 05 13:45:22 ip-172-31-2-140 sudo[20724]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:45:22 ip-172-31-2-140 sudo[20724]: pam_unix(sudo:session): session closed for user root
+May 05 13:45:30 ip-172-31-2-140 sudo[20756]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install mysql-client-5.7[0m
+May 05 13:45:30 ip-172-31-2-140 sudo[20756]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:45:30 ip-172-31-2-140 sudo[20756]: pam_unix(sudo:session): session closed for user root
+May 05 13:45:37 ip-172-31-2-140 sudo[20788]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get install mysql-server[0m
+May 05 13:45:37 ip-172-31-2-140 sudo[20788]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:45:37 ip-172-31-2-140 sudo[20788]: pam_unix(sudo:session): session closed for user root
+May 05 13:46:17 ip-172-31-2-140 sudo[20839]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/touch /var/run/mysqld/mysqld.sock[0m
+May 05 13:46:17 ip-172-31-2-140 sudo[20839]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:46:17 ip-172-31-2-140 sudo[20839]: pam_unix(sudo:session): session closed for user root
+May 05 13:46:21 ip-172-31-2-140 sudo[20841]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/chown -R mysql:mysql /var/lib/mysql[0m
+May 05 13:46:21 ip-172-31-2-140 sudo[20841]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:46:21 ip-172-31-2-140 sudo[20841]: pam_unix(sudo:session): session closed for user root
+May 05 13:46:34 ip-172-31-2-140 sudo[20853]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/chown -R mysql:mysql /var/lib/mysql[0m
+May 05 13:46:34 ip-172-31-2-140 sudo[20853]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:46:34 ip-172-31-2-140 sudo[20853]: pam_unix(sudo:session): session closed for user root
+May 05 13:46:48 ip-172-31-2-140 sudo[20857]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/mysql[0m
+May 05 13:46:48 ip-172-31-2-140 sudo[20857]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:46:48 ip-172-31-2-140 sudo[20857]: pam_unix(sudo:session): session closed for user root
+May 05 13:47:07 ip-172-31-2-140 sudo[20859]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get remove mysql --purge[0m
+May 05 13:47:07 ip-172-31-2-140 sudo[20859]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:47:07 ip-172-31-2-140 sudo[20859]: pam_unix(sudo:session): session closed for user root
+May 05 13:47:16 ip-172-31-2-140 sudo[20941]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get remove mysql-* --purge[0m
+May 05 13:47:16 ip-172-31-2-140 sudo[20941]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:47:19 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:47:19 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:47:20 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:47:34 ip-172-31-2-140 userdel[21189]: delete user 'mysql'
+May 05 13:47:34 ip-172-31-2-140 userdel[21189]: removed group 'mysql' owned by 'mysql'
+May 05 13:47:34 ip-172-31-2-140 userdel[21189]: removed shadow group 'mysql' owned by 'mysql'
+May 05 13:47:34 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:47:34 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:47:35 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:47:35 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:47:35 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:47:37 ip-172-31-2-140 sudo[20941]: pam_unix(sudo:session): session closed for user root
+May 05 13:47:54 ip-172-31-2-140 sudo[21404]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install mysql-client-5.7[0m
+May 05 13:47:54 ip-172-31-2-140 sudo[21404]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:47:56 ip-172-31-2-140 systemd-resolved[616]: [0;1;39m[0;1;31m[0;1;39mServer returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.[0m
+May 05 13:48:00 ip-172-31-2-140 sudo[21404]: pam_unix(sudo:session): session closed for user root
+May 05 13:48:32 ip-172-31-2-140 sudo[21622]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install mysql-server-5.7[0m
+May 05 13:48:32 ip-172-31-2-140 sudo[21622]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:48:36 ip-172-31-2-140 groupadd[21690]: group added to /etc/group: name=mysql, GID=115
+May 05 13:48:36 ip-172-31-2-140 groupadd[21690]: group added to /etc/gshadow: name=mysql
+May 05 13:48:36 ip-172-31-2-140 groupadd[21690]: new group: name=mysql, GID=115
+May 05 13:48:36 ip-172-31-2-140 useradd[21696]: new user: name=mysql, UID=111, GID=115, home=/nonexistent, shell=/bin/false
+May 05 13:48:36 ip-172-31-2-140 chage[21702]: changed password expiry for mysql
+May 05 13:48:36 ip-172-31-2-140 chfn[21705]: changed user 'mysql' information
+May 05 13:48:37 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:48:51 ip-172-31-2-140 audit[21931]: AVC apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/sbin/mysqld" pid=21931 comm="apparmor_parser"
+May 05 13:48:51 ip-172-31-2-140 kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1588686531.778:42): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/sbin/mysqld" pid=21931 comm="apparmor_parser"[0m
+May 05 13:48:51 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:48:52 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:48:52 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:48:52 ip-172-31-2-140 systemd[1]: Starting MySQL Community Server...
+-- Subject: Unit mysql.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has begun starting up.
+May 05 13:48:52 ip-172-31-2-140 systemd[1]: Started MySQL Community Server.
+-- Subject: Unit mysql.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit mysql.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 13:48:52 ip-172-31-2-140 systemd[1]: Reloading.
+May 05 13:48:55 ip-172-31-2-140 sudo[21622]: pam_unix(sudo:session): session closed for user root
+May 05 13:49:05 ip-172-31-2-140 sudo[22224]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/mysql[0m
+May 05 13:49:05 ip-172-31-2-140 sudo[22224]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:50:21 ip-172-31-2-140 sshd[22229]: Invalid user admin from 141.98.81.150 port 46834
+May 05 13:50:21 ip-172-31-2-140 sshd[22229]: Connection closed by invalid user admin 141.98.81.150 port 46834 [preauth]
+May 05 13:50:26 ip-172-31-2-140 sudo[22231]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/mysql[0m
+May 05 13:50:26 ip-172-31-2-140 sudo[22231]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:50:26 ip-172-31-2-140 sudo[22231]: pam_unix(sudo:session): session closed for user root
+May 05 13:50:43 ip-172-31-2-140 sshd[16150]: Received disconnect from 186.228.178.158 port 53912:11: disconnected by user
+May 05 13:50:43 ip-172-31-2-140 sshd[16150]: Disconnected from user ubuntu 186.228.178.158 port 53912
+May 05 13:50:43 ip-172-31-2-140 systemd-logind[785]: Removed session 67.
+-- Subject: Session 67 has been terminated
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID 67 has been terminated.
+May 05 13:50:43 ip-172-31-2-140 sshd[16068]: pam_unix(sshd:session): session closed for user ubuntu
+May 05 13:50:43 ip-172-31-2-140 sudo[22224]: pam_unix(sudo:session): session closed for user root
+May 05 13:50:47 ip-172-31-2-140 sshd[22236]: Accepted publickey for ubuntu from 186.228.178.158 port 54280 ssh2: RSA SHA256:DqTxzeB5k9rcMVfOzRQH9oQ2x+Ci/m+Wlu/1hKGJKOo
+May 05 13:50:47 ip-172-31-2-140 sshd[22236]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 05 13:50:47 ip-172-31-2-140 systemd[1]: Started Session 69 of user ubuntu.
+-- Subject: Unit session-69.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit session-69.scope has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 13:50:47 ip-172-31-2-140 systemd-logind[785]: New session 69 of user ubuntu.
+-- Subject: A new session 69 has been created for user ubuntu
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID 69 has been created for the user ubuntu.
+-- 
+-- The leading process of the session is 22236.
+May 05 13:53:51 ip-172-31-2-140 sshd[22372]: Accepted publickey for ubuntu from 186.228.178.158 port 54378 ssh2: RSA SHA256:DqTxzeB5k9rcMVfOzRQH9oQ2x+Ci/m+Wlu/1hKGJKOo
+May 05 13:53:51 ip-172-31-2-140 sshd[22372]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 05 13:53:51 ip-172-31-2-140 systemd[1]: Started Session 70 of user ubuntu.
+-- Subject: Unit session-70.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit session-70.scope has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 13:53:51 ip-172-31-2-140 systemd-logind[785]: New session 70 of user ubuntu.
+-- Subject: A new session 70 has been created for user ubuntu
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID 70 has been created for the user ubuntu.
+-- 
+-- The leading process of the session is 22372.
+May 05 13:54:04 ip-172-31-2-140 sshd[22486]: Did not receive identification string from 87.251.74.30 port 56286
+May 05 13:54:07 ip-172-31-2-140 sshd[22487]: Invalid user admin from 87.251.74.30 port 20114
+May 05 13:54:07 ip-172-31-2-140 sshd[22488]: Invalid user user from 87.251.74.30 port 20182
+May 05 13:54:07 ip-172-31-2-140 sshd[22487]: Connection closed by invalid user admin 87.251.74.30 port 20114 [preauth]
+May 05 13:54:07 ip-172-31-2-140 sshd[22488]: Connection closed by invalid user user 87.251.74.30 port 20182 [preauth]
+May 05 13:54:09 ip-172-31-2-140 sshd[22491]: Connection closed by authenticating user root 87.251.74.30 port 30764 [preauth]
+May 05 13:54:55 ip-172-31-2-140 sudo[22516]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/bin/mkdir BKP[0m
+May 05 13:54:55 ip-172-31-2-140 sudo[22516]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:54:55 ip-172-31-2-140 sudo[22516]: pam_unix(sudo:session): session closed for user root
+May 05 13:55:12 ip-172-31-2-140 sudo[22539]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/bin/mv bananatoysonline.com.br bananatoysonline.com.br.conf BKP/[0m
+May 05 13:55:12 ip-172-31-2-140 sudo[22539]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:55:12 ip-172-31-2-140 sudo[22539]: pam_unix(sudo:session): session closed for user root
+May 05 13:55:22 ip-172-31-2-140 sudo[22546]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/3 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/bin/su[0m
+May 05 13:55:22 ip-172-31-2-140 sudo[22546]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:55:22 ip-172-31-2-140 su[22547]: Successful su for root by root
+May 05 13:55:22 ip-172-31-2-140 su[22547]: + /dev/pts/3 root:root
+May 05 13:55:22 ip-172-31-2-140 su[22547]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)
+May 05 13:55:22 ip-172-31-2-140 su[22547]: pam_systemd(su:session): Cannot create session: Already running in a session
+May 05 13:56:12 ip-172-31-2-140 sudo[22578]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service nginx restart[0m
+May 05 13:56:12 ip-172-31-2-140 sudo[22578]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:56:12 ip-172-31-2-140 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun shutting down.
+May 05 13:56:12 ip-172-31-2-140 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: Unit nginx.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has finished shutting down.
+May 05 13:56:12 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 13:56:12 ip-172-31-2-140 nginx[22586]: nginx: [emerg] a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default:22
+May 05 13:56:12 ip-172-31-2-140 nginx[22586]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 13:56:12 ip-172-31-2-140 sudo[22578]: pam_unix(sudo:session): session closed for user root
+May 05 13:56:12 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 13:56:12 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 13:56:12 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is RESULT.
+May 05 13:56:18 ip-172-31-2-140 sudo[22617]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service nginx restart[0m
+May 05 13:56:18 ip-172-31-2-140 sudo[22617]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:56:18 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 13:56:18 ip-172-31-2-140 nginx[22623]: nginx: [emerg] a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default:22
+May 05 13:56:18 ip-172-31-2-140 nginx[22623]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 13:56:18 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 13:56:18 ip-172-31-2-140 sudo[22617]: pam_unix(sudo:session): session closed for user root
+May 05 13:56:18 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 13:56:18 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is RESULT.
+May 05 13:56:23 ip-172-31-2-140 sudo[22647]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service nginx stop[0m
+May 05 13:56:23 ip-172-31-2-140 sudo[22647]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:56:24 ip-172-31-2-140 sudo[22647]: pam_unix(sudo:session): session closed for user root
+May 05 13:56:25 ip-172-31-2-140 sudo[22679]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service nginx start[0m
+May 05 13:56:25 ip-172-31-2-140 sudo[22679]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:56:26 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 13:56:26 ip-172-31-2-140 nginx[22709]: nginx: [emerg] a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default:22
+May 05 13:56:26 ip-172-31-2-140 nginx[22709]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 13:56:26 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 13:56:26 ip-172-31-2-140 sudo[22679]: pam_unix(sudo:session): session closed for user root
+May 05 13:56:26 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 13:56:26 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is RESULT.
+May 05 13:56:30 ip-172-31-2-140 sudo[22730]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service nginx start[0m
+May 05 13:56:30 ip-172-31-2-140 sudo[22730]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:56:31 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 13:56:31 ip-172-31-2-140 nginx[22760]: nginx: [emerg] a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default:22
+May 05 13:56:31 ip-172-31-2-140 nginx[22760]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 13:56:31 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 13:56:31 ip-172-31-2-140 sudo[22730]: pam_unix(sudo:session): session closed for user root
+May 05 13:56:31 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 13:56:31 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is RESULT.
+May 05 13:56:44 ip-172-31-2-140 sshd[22771]: Received disconnect from 222.186.30.112 port 46665:11:  [preauth]
+May 05 13:56:44 ip-172-31-2-140 sshd[22771]: Disconnected from authenticating user root 222.186.30.112 port 46665 [preauth]
+May 05 13:57:07 ip-172-31-2-140 sudo[22775]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service nginx start[0m
+May 05 13:57:07 ip-172-31-2-140 sudo[22775]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:57:07 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 13:57:07 ip-172-31-2-140 nginx[22805]: nginx: [emerg] a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default:22
+May 05 13:57:07 ip-172-31-2-140 nginx[22805]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 13:57:07 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 13:57:07 ip-172-31-2-140 sudo[22775]: pam_unix(sudo:session): session closed for user root
+May 05 13:57:07 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 13:57:07 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is RESULT.
+May 05 13:58:12 ip-172-31-2-140 sudo[22864]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx ; USER=root ; COMMAND=/bin/rm /etc/nginx/sites-enabled/default[0m
+May 05 13:58:12 ip-172-31-2-140 sudo[22864]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:58:12 ip-172-31-2-140 sudo[22864]: pam_unix(sudo:session): session closed for user root
+May 05 13:58:16 ip-172-31-2-140 sudo[22866]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx ; USER=root ; COMMAND=/usr/sbin/service nginx restart[0m
+May 05 13:58:16 ip-172-31-2-140 sudo[22866]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:58:16 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 13:58:16 ip-172-31-2-140 systemd[1]: nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument
+May 05 13:58:16 ip-172-31-2-140 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: Unit nginx.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 13:58:16 ip-172-31-2-140 sudo[22866]: pam_unix(sudo:session): session closed for user root
+May 05 13:58:28 ip-172-31-2-140 sshd[22895]: Invalid user admin from 87.251.74.50 port 31260
+May 05 13:58:28 ip-172-31-2-140 sshd[22895]: Connection closed by invalid user admin 87.251.74.50 port 31260 [preauth]
+May 05 13:58:34 ip-172-31-2-140 sshd[22897]: Invalid user admin from 45.227.255.204 port 51570
+May 05 13:58:34 ip-172-31-2-140 sshd[22897]: Connection closed by invalid user admin 45.227.255.204 port 51570 [preauth]
+May 05 13:59:13 ip-172-31-2-140 sudo[22917]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-enabled ; USER=root ; COMMAND=/bin/ln -s ../sites-available/default .[0m
+May 05 13:59:13 ip-172-31-2-140 sudo[22917]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 13:59:13 ip-172-31-2-140 sudo[22917]: pam_unix(sudo:session): session closed for user root
+May 05 14:00:45 ip-172-31-2-140 sudo[22955]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/1 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/bin/su[0m
+May 05 14:00:45 ip-172-31-2-140 sudo[22955]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 14:00:45 ip-172-31-2-140 su[22956]: Successful su for root by root
+May 05 14:00:45 ip-172-31-2-140 su[22956]: + /dev/pts/1 root:root
+May 05 14:00:45 ip-172-31-2-140 su[22956]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)
+May 05 14:00:45 ip-172-31-2-140 su[22956]: pam_systemd(su:session): Cannot create session: Already running in a session
+May 05 14:00:55 ip-172-31-2-140 systemd-networkd[597]: eth0: Configured
+May 05 14:00:55 ip-172-31-2-140 systemd-timesyncd[471]: Network configuration changed, trying to establish connection.
+May 05 14:00:55 ip-172-31-2-140 systemd-timesyncd[471]: Synchronized to time server 91.189.89.198:123 (ntp.ubuntu.com).
+May 05 14:00:57 ip-172-31-2-140 sudo[22970]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/2 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service ngnix restart[0m
+May 05 14:00:57 ip-172-31-2-140 sudo[22970]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 14:00:57 ip-172-31-2-140 sudo[22970]: pam_unix(sudo:session): session closed for user root
+May 05 14:01:03 ip-172-31-2-140 sudo[22976]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/2 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service nginx restart[0m
+May 05 14:01:03 ip-172-31-2-140 sudo[22976]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 14:01:03 ip-172-31-2-140 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun shutting down.
+May 05 14:01:03 ip-172-31-2-140 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: Unit nginx.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has finished shutting down.
+May 05 14:01:03 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 14:01:03 ip-172-31-2-140 nginx[22984]: nginx: [emerg] a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default:22
+May 05 14:01:03 ip-172-31-2-140 nginx[22984]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 14:01:03 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 14:01:03 ip-172-31-2-140 sudo[22976]: pam_unix(sudo:session): session closed for user root
+May 05 14:01:03 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 14:01:03 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is RESULT.
+May 05 14:01:22 ip-172-31-2-140 sudo[23005]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/2 ; PWD=/etc/nginx/sites-available ; USER=root ; COMMAND=/usr/sbin/service nginx restart[0m
+May 05 14:01:22 ip-172-31-2-140 sudo[23005]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 14:01:22 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 14:01:22 ip-172-31-2-140 nginx[23011]: nginx: [emerg] a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default:22
+May 05 14:01:22 ip-172-31-2-140 nginx[23011]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 14:01:22 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 14:01:22 ip-172-31-2-140 sudo[23005]: pam_unix(sudo:session): session closed for user root
+May 05 14:01:22 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 14:01:22 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is RESULT.
+May 05 14:02:00 ip-172-31-2-140 sudo[23039]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/2 ; PWD=/etc/nginx/sites-enabled ; USER=root ; COMMAND=/usr/sbin/service nginx restart[0m
+May 05 14:02:00 ip-172-31-2-140 sudo[23039]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 14:02:00 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 14:02:00 ip-172-31-2-140 systemd[1]: nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument
+May 05 14:02:00 ip-172-31-2-140 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: Unit nginx.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 14:02:00 ip-172-31-2-140 sudo[23039]: pam_unix(sudo:session): session closed for user root
+May 05 14:04:02 ip-172-31-2-140 sudo[23094]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/2 ; PWD=/etc/nginx/sites-enabled ; USER=root ; COMMAND=/usr/sbin/service nginx restart[0m
+May 05 14:04:02 ip-172-31-2-140 sudo[23094]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+May 05 14:04:02 ip-172-31-2-140 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun shutting down.
+May 05 14:04:02 ip-172-31-2-140 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: Unit nginx.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has finished shutting down.
+May 05 14:04:02 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 14:04:02 ip-172-31-2-140 systemd[1]: nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument
+May 05 14:04:02 ip-172-31-2-140 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: Unit nginx.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 14:04:02 ip-172-31-2-140 sudo[23094]: pam_unix(sudo:session): session closed for user root
+May 05 14:09:01 ip-172-31-2-140 CRON[23148]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 05 14:09:01 ip-172-31-2-140 CRON[23149]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 05 14:09:01 ip-172-31-2-140 CRON[23148]: pam_unix(cron:session): session closed for user root
+May 05 14:09:03 ip-172-31-2-140 systemd[1]: Starting Clean php session files...
+-- Subject: Unit phpsessionclean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has begun starting up.
+May 05 14:09:03 ip-172-31-2-140 systemd[1]: Started Clean php session files.
+-- Subject: Unit phpsessionclean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit phpsessionclean.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
+May 05 14:15:04 ip-172-31-2-140 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun shutting down.
+May 05 14:15:04 ip-172-31-2-140 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: Unit nginx.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has finished shutting down.
+May 05 14:15:04 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 14:15:04 ip-172-31-2-140 nginx[23308]: nginx: [emerg] a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default:22
+May 05 14:15:04 ip-172-31-2-140 nginx[23308]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 14:15:04 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 14:15:04 ip-172-31-2-140 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 14:15:04 ip-172-31-2-140 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is RESULT.
+May 05 14:15:41 ip-172-31-2-140 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 14:15:41 ip-172-31-2-140 systemd[1]: nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument
+May 05 14:15:41 ip-172-31-2-140 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: Unit nginx.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Unit nginx.service has finished starting up.
+-- 
+-- The start-up result is RESULT.
