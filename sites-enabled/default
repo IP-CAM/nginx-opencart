@@ -19,14 +19,14 @@
 # Default server configuration
 #
 server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
 
 	# SSL configuration
 	#
-	# listen 443 ssl http2;
-	# listen [::]:443 ssl http2;
-
-	# ssl_certificate /etc/nginx/ssl/www.bananatoys.com.br.crt;
-        # ssl_certificate_key /etc/nginx/ssl/www.bananatoys.com.br.key;
+	# listen 443 ssl default_server;
+	# listen [::]:443 ssl default_server;
+	#
 	# Note: You should disable gzip for SSL traffic.
 	# See: https://bugs.debian.org/773332
 	#
@@ -38,34 +38,29 @@ server {
 	#
 	# include snippets/snakeoil.conf;
 
-	root /var/www/html/Site4Vets/dogger;
+	root /var/www/html/Site4Vets;
 
 	# Add index.php to the list if you are using PHP
 	index index.php index.html index.htm index.nginx-debian.html;
 
-	server_name 4vetsonline.com.br;
+	server_name 127.0.0.1;
 
 	location / {
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
-		try_files $uri $uri/ =404;
-		error_page 404 =301 https://4vetsonline.com.br;
+		try_files $uri $uri/ = /index.php?q=$uri&teste;
 	}
-	    #return 301 $scheme://4vetsonline.com.br$request_uri;
+
 	# pass PHP scripts to FastCGI server
 	#
 	location ~ \.php$ {
 		include snippets/fastcgi-php.conf;
-		
+	
 		# With php-fpm (or other unix sockets):
 		fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
 		# With php-cgi (or other tcp sockets):
-		#fastcgi_pass 127.0.0.1:9000;	
-}
-
-
-
-
+		#fastcgi_pass 127.0.0.1:9000;
+	}
 
 	# deny access to .htaccess files, if Apache's document root
 	# concurs with nginx's one
@@ -73,18 +68,6 @@ server {
 	#location ~ /\.ht {
 	#	deny all;
 	#}
-
-    
-
-    #listen 80; # managed by Certbot
-
-    listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/4vetsonline.com.br/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/4vetsonline.com.br/privkey.pem; # managed by Certbot
-    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
-
-
 }
 
 
@@ -93,35 +76,17 @@ server {
 # You can move that to a different file under sites-available/ and symlink that
 # to sites-enabled/ to enable it.
 #
-server {
-	listen 80;
-	listen [::]:80;
-	listen 443;
-	
+#server {
+#	listen 80;
+#	listen [::]:80;
+#
+#	server_name example.com;
+#
+#	root /var/www/example.com;
+#	index index.html;
+#
+#	location / {
+#		try_files $uri $uri/ =404;
+#	}
+#}
 
-	server_name example.com;
-
-	root /var/www/html/Site4Vets;
-	index index.html;
-
-	location / {
-		try_files $uri $uri/ index.html;
-	}
-}
-
-server {
-  
-    listen 80;
-
-    server_name 4vetsonline.com.br;
-
-    return 301 https://4vetsonline.com.br;
-}
-
-server {
-
-    server_name www.4vetsonline.com.br;
-
-    return 301 https://4vetsonline.com.br$request_uri;
-
-}

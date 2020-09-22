@@ -110,25 +110,16 @@ server {
    listen [::]:80;
    server_name basic.4vetsonline.com.br;
 
-   return 301 $scheme://basic.4vetsonline.com.br$request_uri;
+   return 301 https://basic.4vetsonline.com.br$request_uri;
 
 }
 
 server {
-    if ($host = basic.4vetsonline.com.br) {
-        return 301 https://$host$request_uri;
-    } # managed by Certbot
-
-
-
-	server_name basic.4vetsonline.com.br;
-
-
-
-
 
     listen 80;
-    return 404; # managed by Certbot
+    server_name basic.4vetsonline.com.br;
+	
+    return 301 https://basic.4vetsonline.com.br$request_uri;
 
 
 }
